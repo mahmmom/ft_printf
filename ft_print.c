@@ -22,24 +22,6 @@ else if (format[counter] == 's')
   ft_strdup(*str)
   counter++;
 }
-else if (format[counter] == 'd' || format[counter] == 'i')
-{
-  int ch = va_arg(args, int)
-  
-  counter++;
-}
-else if (format[counter] == 'x' || format[counter] == 'X')
-{
-  int ch = va_arg(args, int)
-  
-  counter++;
-}
-else if (format[counter] == 'p')
-{
-  int ch = va_arg(args, int)
-  
-  counter++;
-}
   return (counter);
 }
 
@@ -67,7 +49,12 @@ int ft_printf(const char *format, ...)
   return (len);      
 }
 
+int main()
+{
+  char *str = "Mohamed";
 
+  ft_printf()
+}
 
 
 
