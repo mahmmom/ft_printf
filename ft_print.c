@@ -56,16 +56,15 @@ int ft_printf(const char *format, ...)
     len = len + ft_print_formats(args, str[len + 1]);
     len++;
   }
-  else
+    else
   {
     ft_strdup(*format);
     counter++;
   }
   len++;
-}
-va_end(args);
-}
-return (len);      
+  }
+  va_end(args);
+  return (len);      
 }
 
 
