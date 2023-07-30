@@ -15,34 +15,31 @@ while (format[counter])
   if (format[counter] == '%')
     format++;
       if (format[i] == '%")
-          Putchar('%')
+          ft_Putchar('%')
             counter++;
 
       else if (format[counter] == 'c') 
       {
           int ch = va_arg(args, int)
-          putchar(ch)
+          ft_putchar(ch)
           counter++;
       }
       else if (format[counter] == 's')
       {
         int ch = va_arg(args, char*)
-        putchar(*str)
+        ft_strdup(*str)
         counter++;
       }
-      else if (format[counter] == 'd')
+      else
       {
-        int ch = va_arg(args, int)
-        ft_atoi(*str)
+        ft_strdup(*format);
         counter++;
       }
-      else if (format[counter] == 'i')
-      {
-        int ch = va_arg(args, int)
-        ft_atoi(*str)
-        counter++;
-      }
-      
+  foramt++;
+}
+va_end(args);
+}
+return counter;      
 }
 
 
