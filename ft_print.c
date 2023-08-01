@@ -16,7 +16,7 @@ int	ft_formats(va_list args, const char format)
 	else if (format == 's')
 		print_length += ft_printstr(va_arg(args, char *));
 	else if (format == 'd' || format == 'i')
-		print_length += ft_printnum(va_arg(args, int));
+		print_length += ft_print_num(va_arg(args, int));
 	else if (format == 'p')
 		print_length += ft_print_ptr(va_arg(args, unsigned long long));
 	else if (format == 'u')
