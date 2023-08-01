@@ -14,12 +14,10 @@ int ft_print_num(int n)
         count += ft_putchar('-');
         n = -n;
     }
-
     if (n > 9)
     {
         count += ft_print_num(n / 10);
     }
-
     count += ft_putchar(n % 10 + '0');
     return count;
 }
